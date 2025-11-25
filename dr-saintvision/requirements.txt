@@ -1,0 +1,54 @@
+# ============================================
+# DR-Saintvision Requirements
+# Multi-Agent AI Debate System
+# ============================================
+
+# PyTorch and CUDA
+# Install with CUDA support: pip install torch --index-url https://download.pytorch.org/whl/cu118
+torch>=2.1.0
+torchvision>=0.16.0
+torchaudio>=2.1.0
+
+# Core ML packages
+transformers>=4.36.0
+accelerate>=0.25.0
+bitsandbytes>=0.41.3
+sentencepiece
+protobuf
+safetensors>=0.4.0
+
+# Web search and RAG
+langchain>=0.1.0
+langchain-community>=0.0.10
+chromadb>=0.4.22
+sentence-transformers>=2.2.2
+duckduckgo-search>=4.1.0
+beautifulsoup4>=4.12.2
+lxml>=4.9.0
+
+# API and Frontend
+fastapi>=0.108.0
+uvicorn[standard]>=0.25.0
+gradio>=4.13.0
+websockets>=12.0
+
+# Database
+sqlalchemy>=2.0.23
+aiosqlite>=0.19.0
+
+# Utilities
+pydantic>=2.5.0
+pydantic-settings>=2.0.0
+aiohttp>=3.9.0
+httpx>=0.25.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+python-dotenv>=1.0.0
+rich>=13.0.0
+typer>=0.9.0
+tqdm>=4.66.0
+
+# Testing (optional)
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0

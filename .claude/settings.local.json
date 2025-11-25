@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(winget install Ollama.Ollama --accept-source-agreements --accept-package-agreements)",
+      "Bash(powershell -Command \"Start-Sleep -Seconds 5; Invoke-WebRequest -Uri ''http://localhost:11434/api/tags'' -UseBasicParsing -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Content\")",
+      "Bash(powershell -Command:*)",
+      "Bash(py -m pip install gradio fastapi uvicorn httpx aiohttp python-dotenv numpy scipy)",
+      "Bash(py simple_run.py:*)",
+      "Bash(py -m pip install:*)",
+      "Bash(set \"PYTHONPATH=C:\\Project\\Dr''s Saintvision\\Lib\\site-packages\")",
+      "Bash(curl:*)",
+      "Bash(taskkill:*)",
+      "Bash(timeout:*)",
+      "Bash(ollama list:*)",
+      "Bash(ollama --version:*)",
+      "Bash(dir:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nstep2: Add ChatGPT Vision, fix Ollama 404, clickable history\n\n- Fix Ollama 404 error with model fallback in get_active_model()\n- Add ChatGPT Vision (GPT-4o) for image analysis\n- Add clickable conversation history in sidebar\n- Auto-refresh history after new messages\n- Add CLAUDE.md documentation\n- Add test scripts for system validation\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
