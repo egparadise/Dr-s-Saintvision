@@ -220,15 +220,7 @@ def format_confidence(scores: dict) -> str:
 def create_interface():
     """Create and return the Gradio interface"""
 
-    with gr.Blocks(
-        title="DR-Saintvision",
-        theme=gr.themes.Soft(),
-        css="""
-            .container { max-width: 1200px; margin: auto; }
-            .header { text-align: center; margin-bottom: 20px; }
-            .agent-box { border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin: 10px 0; }
-        """
-    ) as app:
+    with gr.Blocks() as app:
 
         # Header
         gr.Markdown("""
